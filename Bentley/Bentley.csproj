@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\Images\BGT3_Front_Viewtransparent.png" />
+    <None Remove="Assets\Images\BGT3_Logotransparent.png" />
+    <None Remove="Assets\Images\GT3_Continentaltransparent.png" />
+    <None Remove="Assets\Images\GT3_FrontViewtransparent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\BGT3_Front_Viewtransparent.png" />
+    <Resource Include="Assets\Images\BGT3_Logotransparent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\Images\GT3_Continentaltransparent.png" />
+    <Resource Include="Assets\Images\GT3_FrontViewtransparent.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Caliburn.Micro" Version="4.0.173" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Styles\" />
+  </ItemGroup>
+
+</Project>
